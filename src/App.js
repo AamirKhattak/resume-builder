@@ -9,9 +9,9 @@ function App() {
     "https://media-exp1.licdn.com/dms/image/D4D03AQE2Fs9NrOOMxA/profile-displayphoto-shrink_200_200/0/1669964820953?e=1675296000&v=beta&t=3m-NbxjySzFt1d-rDtCCn6SBQWcxjivohfaKdqt05W8",
     "Muhammad Aamir Javid",
     "Muhammad Javid",
-    "0333-5235122",
-    "aamir.fui@gmail.com",
-    "https://www.linkedin.com/in/aamirkhattak",
+    "0333-1231236",
+    "aamir.xyz.abc@gmail.com",
+    "https://www.linkedin.com/in/abc",
     "https://github.com/AamirKhattak",
     "Software Engineer by Choice!"
   );
@@ -42,7 +42,7 @@ function App() {
   ▪  Payroll Management Software 
   ▪  Land Management Software`
   );
-  
+
 
   console.log(aamirResume.resume);
 
