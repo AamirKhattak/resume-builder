@@ -33,7 +33,7 @@ function App() {
     "OGDCL",
     "Islamabad",
     "true",
-    { month: "oct", year: "2017" },
+    { month: "10", year: "2017" },
     undefined,
     "Oil & Gas",
     `Here I am responsible for the design and development of the following web application 
@@ -43,7 +43,26 @@ function App() {
   ▪  Land Management Software`
   );
 
+  aamirResume.addExperience(
+    "Assistant Manager - Software",
+    "full-time",
+    "NECSOM/NECOP",
+    "ISLAMABAD",
+    false,
+    { month: "4", year: "2017" },
+    { month: "10", year: "2017" },
+    "DEFENCE"
+  );
 
+  aamirResume.addCertificates(
+    `Fullstack Web Dev (MERN, Jest, Cypress ...) Certification (Uni of Helsinki, Finland and Houston Inc.)`,
+    "Uni of Helsinki, Finland",
+    "May 2022",
+    undefined,
+    false,
+    "0ed1405ee0d8bb4a7e16e4851a4480a5",
+    "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/0ed1405ee0d8bb4a7e16e4851a4480a5"
+  );
   console.log(aamirResume.resume);
 
   return <div className="App">{}</div>;
