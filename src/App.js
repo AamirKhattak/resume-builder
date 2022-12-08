@@ -1,3 +1,4 @@
+import { certificates } from "./aamir";
 import "./App.css";
 import { Resume } from "./util/resume-template";
 
@@ -54,6 +55,9 @@ function App() {
     "DEFENCE"
   );
 
+  certificates.forEach(certificate => {
+    aamirResume.addCertificatesByObj({...certificate});
+  });
   aamirResume.addCertificates(
     `Fullstack Web Dev (MERN, Jest, Cypress ...) Certification (Uni of Helsinki, Finland and Houston Inc.)`,
     "Uni of Helsinki, Finland",

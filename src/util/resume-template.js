@@ -70,6 +70,9 @@ export class Resume {
     });
   };
 
+  addCertificatesByObj = (certObj) => {
+    this._resume.certificates.push({ ...certObj });
+  };
   addCertificates = (
     certificateName,
     issuingOrg,
