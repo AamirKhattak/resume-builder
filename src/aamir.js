@@ -75,3 +75,105 @@ export const certificates = [
         "isExpire": false
     }
 ]
+
+
+export const experiences = [
+    {
+        "title": "Software Engineer",
+        "employementType": "Full-time",
+        "companyName": "Oil & Gas Development Company Ltd. Pakistan",
+        "location": "Islamabad",
+        "isCurrent": true,
+        "startDate": {
+            "month": "Oct",
+            "year": "2017"
+        },
+        "endDate": {
+            "month": "Present"
+        },
+        "industry": null,
+        "desc": "<!---->-  Member of Digital Transformation Team (Headed by Chief Information Officer)<!----><br><span class=\"white-space-pre\"> </span>- Implementation of Enterprise Content Management (IBM Business Automation Workflow)<!----><br><span class=\"white-space-pre\"> </span>- Digitization of historical records<!----><br><!---->*  Design and development of the following single page web applications<!----><br><span class=\"white-space-pre\"> </span>-  Land Management System for Oil Wells, Roads, Plants, Rigs etc of OGDCL<!----><br><span class=\"white-space-pre\"> </span>-  Ticket Management System<!----><br><span class=\"white-space-pre\"> </span>-  Payroll Management System<!----><br><br><!---->Delivered trainings on:<!----><br><!---->- Software Development Process<!----><br><!---->- Singlepage web applications<!----><br><!---->- Front-end and back-end Web Application Design &amp; Development<!----><br><br><!---->Courses Attended:<!----><br><!---->- Productivity Enhancement Through Goal Settings<!----><br><!---->- Training on office writing &amp; communication<!----><br><!---->- Petroleum Industry<!---->",
+        "skills": []
+    },
+    {
+        "title": "Assistant Manager - Software",
+        "companyName": "NESCOM",
+        "isCurrent": false,
+        "startDate": {
+            "month": "Apr",
+            "year": "2017"
+        },
+        "endDate": {
+            "month": "Oct",
+            "year": "2017"
+        },
+        "industry": null,
+        "skills": []
+    },
+    {
+        "title": "Software Engineer - Web Apps",
+        "companyName": "Self-Employed Software Development",
+        "location": "Islamabad",
+        "isCurrent": false,
+        "startDate": {
+            "month": "Mar",
+            "year": "2016"
+        },
+        "endDate": {
+            "month": "Mar",
+            "year": "2017"
+        },
+        "industry": null,
+        "skills": []
+    },
+    {
+        "title": "Computer Vision RnD Engineer",
+        "companyName": "QAIRUS",
+        "location": "Lahore",
+        "isCurrent": false,
+        "startDate": {
+            "month": "Jan",
+            "year": "2015"
+        },
+        "endDate": {
+            "month": "Dec",
+            "year": "2015"
+        },
+        "industry": null,
+        "desc": "<!---->During this one year, I researched and developed computer vision modules for android smart phones.<!----><br><!---->Modules I developed are following:<!----><br><!---->- Text Extraction<!----><br><!---->- Logo Recognition<span class=\"white-space-pre\"> </span><br><!---->- 1D/2D bar code recognition<!----><br><!---->Also did some research and development on Augmented Reality.<!----><br><br><!---->Technologies used: C/C++, Java, Android<!---->",
+        "skills": []
+    },
+    {
+        "title": "Intern - Software Engineer (CV & HPC)",
+        "companyName": "Burqstream Technologies",
+        "location": "Islamabad",
+        "isCurrent": false,
+        "startDate": {
+            "month": "Nov",
+            "year": "2014"
+        },
+        "endDate": {
+            "month": "Dec",
+            "year": "2014"
+        },
+        "industry": null,
+        "desc": "<!---->I was assigned following tasks during my stay:<!----><br><!---->- OpenCV Course development<span class=\"white-space-pre\"> </span><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ (Presentation + Codes + Flyer + Tutorial Installation&amp;Integration With VS)<!----><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎- Real Time face detection<!----><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎- Cartoonify Videos<!----><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎- Face Replacer with some mask (Augmented Reality)<!----><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎- Android Face detection + Cartoonify + Pixelize<!----><br><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎- Feature Extraction using SIFT and SURF Algorithm<!----><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎- Image stitching ( Panorama Imaging)<!----><br><!---->‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎- Deployed open source eLearning server (BigBlueButton)<!---->",
+        "skills": []
+    },
+    {
+        "title": "Android Timetable App",
+        "companyName": "Hobby project",
+        "isCurrent": false,
+        "startDate": {
+            "month": "Oct",
+            "year": "2013"
+        },
+        "endDate": {
+            "month": "Dec",
+            "year": "2013"
+        },
+        "industry": null,
+        "desc": "<!---->A timetable app that would help students in getting timetable updates on their Android phones.<!----><br><!---->It result in saving students time by not checking the notice boards for timetables changes.<!----><br><!---->- This app take excel sheet as an input and then parses it to obtain data related to different lectures, rooms, professors etc.<!---->",
+        "skills": []
+    }
+]

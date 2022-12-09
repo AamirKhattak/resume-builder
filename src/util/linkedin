@@ -45,6 +45,7 @@ for (let i = 0; i < listCert.childElementCount; i++) {
 // await document.location="https://www.linkedin.com/in/aamirkhattak/details/experience/"
 let main = document.getElementById("main");
 let listExps = main.children[0].children[1].children[0].children[0].children[0];
+let experiences = [];
 for (let i = 0; i < listExps.childElementCount; i++) {
   let currExp = listExps.children[i].children[0].children[0];
   let textCurrExp = currExp.children[1];
@@ -64,16 +65,23 @@ for (let i = 0; i < listExps.childElementCount; i++) {
       .innerHTML;
   let isCurrent = endDate === "Present" ? true : false;
   let skills = [];
-  console.log({
+  let experience = {
     title,
     employementType,
     companyName,
     location: locationn,
     isCurrent,
-    startDate,
-    endDate,
+    startDate: {
+        month: startDate.split(' ')[0],
+        year: startDate.split(' ')[1],
+    },
+    endDate: {
+        month: endDate.split(' ')[0],
+        year: endDate.split(' ')[1],
+    },
     industry: null,
     desc,
     skills,
-  });
+  };
+  experiences.push(experience);
 }
