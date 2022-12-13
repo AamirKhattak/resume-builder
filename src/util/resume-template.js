@@ -59,8 +59,9 @@ export class Resume {
     });
   };
 
-  addEducation = (institute, gpa, from, to, shortDesc, longDesc) => {
+  addEducation = (degree,institute, gpa, from, to, shortDesc, longDesc) => {
     this._resume.education.push({
+      degree,
       institute,
       gpa,
       from,
@@ -68,6 +69,10 @@ export class Resume {
       shortDesc,
       longDesc,
     });
+  };
+
+  addExperienceByObj = (obj) => {
+    this._resume.experiences.push({ ...obj });
   };
 
   addCertificatesByObj = (certObj) => {
@@ -110,72 +115,3 @@ export class Resume {
   }
 }
 
-export const resumeTemplate = {
-  presonal: {
-    id: "",
-    thumnail: "",
-    picture: "",
-    name: "",
-    fatherName: "",
-    contactNo: "",
-    email: "",
-    linkedIn: "",
-    Github: "",
-    about: "",
-  },
-  experiences: [
-    {
-      title: "",
-      employementType: "",
-      companyName: "",
-      location: "",
-      isCurrent: true,
-      startDate: {
-        month: "",
-        year: "",
-      },
-      endDate: {
-        month: "",
-        year: "",
-      },
-      industry: "",
-      desc: "",
-      skills: [],
-    },
-  ],
-  education: [
-    {
-      institute: "",
-      gpa: "",
-      from: "",
-      to: "",
-      shortDesc: "",
-      longDesc: "",
-    },
-  ],
-  certificates: [
-    {
-      certificateName: "",
-      issuingOrg: "",
-      issueDate: "",
-      endDate: "",
-      isExpire: "",
-      credentialID: "",
-      credentialURL: "",
-    },
-  ],
-  skills: ["", ""],
-  courses: [
-    {
-      name: "",
-      number: "",
-      institue: "",
-    },
-  ],
-  languages: [
-    {
-      name: "",
-      proficiency: "",
-    },
-  ],
-};

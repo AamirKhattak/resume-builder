@@ -1,75 +1,50 @@
-import { certificates } from "./aamir";
+import { RESUME_DATA } from "./aamir";
 import "./App.css";
 import { Resume } from "./util/resume-template";
 
 function App() {
   const aamirResume = new Resume();
+  const {
+    thumbnail,
+    picture,
+    name,
+    fatherName,
+    contactNo,
+    email,
+    linkedIn,
+    Github,
+    about,
+  } = RESUME_DATA.personal;
 
   aamirResume.addPersonalInfo(
-    "https://media-exp1.licdn.com/dms/image/D4D03AQE2Fs9NrOOMxA/profile-displayphoto-shrink_200_200/0/1669964820953?e=1675296000&v=beta&t=3m-NbxjySzFt1d-rDtCCn6SBQWcxjivohfaKdqt05W8",
-    "https://media-exp1.licdn.com/dms/image/D4D03AQE2Fs9NrOOMxA/profile-displayphoto-shrink_200_200/0/1669964820953?e=1675296000&v=beta&t=3m-NbxjySzFt1d-rDtCCn6SBQWcxjivohfaKdqt05W8",
-    "Muhammad Aamir Javid",
-    "Muhammad Javid",
-    "0333-1231236",
-    "aamir.xyz.abc@gmail.com",
-    "https://www.linkedin.com/in/abc",
-    "https://github.com/AamirKhattak",
-    "Software Engineer by Choice!"
+    thumbnail,
+    picture,
+    name,
+    fatherName,
+    contactNo,
+    email,
+    linkedIn,
+    Github,
+    about
+  );
+  RESUME_DATA.skills.forEach((skill) =>
+    aamirResume.addSkills(skill.name, skill.proficiency)
   );
 
-  aamirResume.addSkills("JavaScript", "Current");
-  aamirResume.addSkills("MERN Stack", "Current");
-  aamirResume.addSkills("MySQL", "Current");
-  aamirResume.addSkills("PostgreSQL", "Current");
-  aamirResume.addSkills("C/C++ ", "Past");
-  aamirResume.addSkills("JAVA", "Past");
-  aamirResume.addSkills("Android Native", "Past");
-  aamirResume.addSkills("CUDA", "Past");
-  aamirResume.addSkills("OpenCV", "Past");
-  aamirResume.addSkills("Boost-C++", "Past");
-
-  aamirResume.addExperience(
-    "Assistant Engineer (Software)",
-    "full-time",
-    "OGDCL",
-    "Islamabad",
-    "true",
-    { month: "10", year: "2017" },
-    undefined,
-    "Oil & Gas",
-    `Here I am responsible for the design and development of the following web application 
-  projects. 
-  ▪  Helpdesk Management Software 
-  ▪  Payroll Management Software 
-  ▪  Land Management Software`
-  );
-
-  aamirResume.addExperience(
-    "Assistant Manager - Software",
-    "full-time",
-    "NECSOM/NECOP",
-    "ISLAMABAD",
-    false,
-    { month: "4", year: "2017" },
-    { month: "10", year: "2017" },
-    "DEFENCE"
-  );
-
-  certificates.forEach(certificate => {
-    aamirResume.addCertificatesByObj({...certificate});
+  RESUME_DATA.experiences.forEach((experience) => {
+    aamirResume.addExperienceByObj({ ...experience });
   });
-  aamirResume.addCertificates(
-    `Fullstack Web Dev (MERN, Jest, Cypress ...) Certification (Uni of Helsinki, Finland and Houston Inc.)`,
-    "Uni of Helsinki, Finland",
-    "May 2022",
-    undefined,
-    false,
-    "0ed1405ee0d8bb4a7e16e4851a4480a5",
-    "https://studies.cs.helsinki.fi/stats/api/certificate/fullstackopen/en/0ed1405ee0d8bb4a7e16e4851a4480a5"
-  );
+  RESUME_DATA.certificates.forEach((certificate) => {
+    aamirResume.addCertificatesByObj({ ...certificate });
+  });
+
   console.log(aamirResume.resume);
 
-  return <div className="App">{}</div>;
+  return <div className="App">
+        <h1 className="text-5xl bg-indigo-400 font-bold underline">
+      Hello world!
+    </h1>
+  </div>;
 }
 
 export default App;
