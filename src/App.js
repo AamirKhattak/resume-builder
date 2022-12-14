@@ -46,11 +46,14 @@ function App() {
 
   return (
     <div className="App">
-      <div className="flex w-full justify-center flex-col">
-        <Personal personal={aamirResume.resume.personal} />
-        <Skill skills={aamirResume.resume.skills} />
-        <Experience experiences={aamirResume.resume.experiences} />
-        <Certificate certificates={aamirResume.resume.certificates} />
+      <div id="pageA4" className="mx-auto my-auto" style={{ width: "210mm", height: "297mm" }}>
+        <div className="flex w-full justify-center flex-col">
+          <Personal personal={aamirResume.resume.personal} />
+          <hr class="my-1 h-px bg-gray-200 h-1 rounded  border-0 dark:bg-gray-700"/>
+          <Skill skills={aamirResume.resume.skills} />
+          <Experience experiences={aamirResume.resume.experiences} />
+          <Certificate certificates={aamirResume.resume.certificates} />
+        </div>
       </div>
     </div>
   );

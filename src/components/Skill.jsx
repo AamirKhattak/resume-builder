@@ -1,12 +1,13 @@
 import React from "react";
+import Section from "./Section";
 
 export default function Skill({ skills }) {
   return (
-    <div className="border-rose-600 border-2 flex flex-row">
-      <div className="text-xl font-bold m-6">Skills</div>
-      <div className="flex flex-row">
+    <div className="flex flex-row align-middle">
+      <Section name={"Skills"}/>
+      <div className="flex flex-row align-middle">
         {skills.map((skill) => (
-          <div>{skill.name}</div>
+          <div className="inline-block mx-1 flex-wrap text-gray-900">{skill.name}</div>
         ))}
       </div>
     </div>
