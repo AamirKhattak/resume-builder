@@ -9,11 +9,11 @@ export class Resume {
     languages: [],
   };
 
-  addPersonalInfo = (
+   addPersonalInfo = (
     thumbnail,
     picture,
-    name,
-    fatherName,
+    firstName,
+    lastName,
     contactNo,
     email,
     linkedIn,
@@ -23,8 +23,8 @@ export class Resume {
     this._resume.personal = {
       thumbnail,
       picture,
-      name,
-      fatherName,
+      firstName,
+      lastName,
       contactNo,
       email,
       linkedIn,
@@ -109,6 +109,7 @@ export class Resume {
   addLanguages = (name, proficiency) => {
     this._resume.certificates.push({ name, proficiency });
   };
+
 
   get resume() {
     return this._resume;

@@ -1,5 +1,9 @@
 import { RESUME_DATA } from "./aamir";
 import "./App.css";
+import Certificate from "./components/Certificate";
+import Experience from "./components/Experience";
+import Personal from "./components/Personal";
+import Skill from "./components/Skill";
 import { Resume } from "./util/resume-template";
 
 function App() {
@@ -7,8 +11,8 @@ function App() {
   const {
     thumbnail,
     picture,
-    name,
-    fatherName,
+    firstName,
+    lastName,
     contactNo,
     email,
     linkedIn,
@@ -19,8 +23,8 @@ function App() {
   aamirResume.addPersonalInfo(
     thumbnail,
     picture,
-    name,
-    fatherName,
+    firstName,
+    lastName,
     contactNo,
     email,
     linkedIn,
@@ -40,11 +44,16 @@ function App() {
 
   console.log(aamirResume.resume);
 
-  return <div className="App">
-        <h1 className="text-5xl bg-indigo-400 font-bold underline">
-      Hello world!
-    </h1>
-  </div>;
+  return (
+    <div className="App">
+      <div className="flex w-full justify-center flex-col">
+        <Personal personal={aamirResume.resume.personal} />
+        <Skill skills={aamirResume.resume.skills} />
+        <Experience experiences={aamirResume.resume.experiences} />
+        <Certificate certificates={aamirResume.resume.certificates} />
+      </div>
+    </div>
+  );
 }
 
 export default App;

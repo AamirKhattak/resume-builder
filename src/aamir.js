@@ -4,8 +4,8 @@ export const RESUME_DATA = {
       "https://media-exp1.licdn.com/dms/image/D4D03AQE2Fs9NrOOMxA/profile-displayphoto-shrink_200_200/0/1669964820953?e=1675296000&v=beta&t=3m-NbxjySzFt1d-rDtCCn6SBQWcxjivohfaKdqt05W8",
     picture:
       "https://media-exp1.licdn.com/dms/image/D4D03AQE2Fs9NrOOMxA/profile-displayphoto-shrink_200_200/0/1669964820953?e=1675296000&v=beta&t=3m-NbxjySzFt1d-rDtCCn6SBQWcxjivohfaKdqt05W8",
-    name: "Muhammad Aamir Javid",
-    fatherName: "Muhammad Javid",
+    firstName: "Muhammad Aamir",
+    lastName: "Javid",
     contactNo: "0333-1231236",
     email: "aamir.xyz.abc@gmail.com",
     linkedIn: "https://www.linkedin.com/in/abc",
@@ -209,30 +209,33 @@ export const RESUME_DATA = {
       skills: [],
     },
   ],
-  languages:[
+  languages: [
     {
-        name:"Pashto", proficiency:"Native or bilingual"
+      name: "Pashto",
+      proficiency: "Native or bilingual",
     },
     {
-        name:"Urdu", proficiency:"Native or bilingual"
+      name: "Urdu",
+      proficiency: "Native or bilingual",
     },
     {
-        name:"English", proficiency:"Professional working"
+      name: "English",
+      proficiency: "Professional working",
     },
   ],
-  education:[
+  education: [
     {
-        degree: 'Bachelor of Computer in Software Engineering',
-        institute: 'Foundation University Rawalpindi Campus, Rawalpindi',
-        gpa:'2.84',
-        from:'2010',
-        to:'2014',
+      degree: "Bachelor of Computer in Software Engineering",
+      institute: "Foundation University Rawalpindi Campus, Rawalpindi",
+      gpa: "2.84",
+      from: "2010",
+      to: "2014",
     },
     {
-        degree: 'Intermediate Faculty of Science (FSc.)',
-        institute: 'Sir Syed Science College, Rawalpindi',
-        from:'2008',
-        to:'2010',
-    }
-  ]
+      degree: "Intermediate Faculty of Science (FSc.)",
+      institute: "Sir Syed Science College, Rawalpindi",
+      from: "2008",
+      to: "2010",
+    },
+  ],
 };
